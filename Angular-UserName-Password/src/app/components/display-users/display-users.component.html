@@ -1,0 +1,22 @@
+<div class="display-users-container">
+    <h2>All Users</h2>
+    <div *ngFor="let user of users; let i = index" class="user-item">
+      <div *ngIf="editIndex !== i">
+        <strong>{{ i + 1 }}.</strong> {{ user.username }} - {{ user.password }}
+        <button (click)="startEdit(i)">Edit</button>
+        <button (click)="deleteUser(i)">Delete</button>
+      </div>
+      <div *ngIf="editIndex === i">
+        <input [(ngModel)]="editedUsername" placeholder="Username" />
+        <input [(ngModel)]="editedPassword" placeholder="Password" />
+        <button (click)="saveEdit()">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+  
+    <div class="add-user-buttons">
+      <button (click)="goToAddUserPage()">Add New User</button>
+     
+    </div>
+  </div>
+  

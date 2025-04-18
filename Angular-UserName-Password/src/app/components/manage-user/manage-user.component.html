@@ -1,0 +1,7 @@
+<h2>Manage Users</h2>
+<div *ngFor="let user of users; let i = index">
+  <input [(ngModel)]="user.username" placeholder="Username">
+  <input [(ngModel)]="user.password" placeholder="Password">
+  <button (click)="updateUser(i)">Update</button>
+  <button (click)="deleteUser(i)">Delete</button>
+</div>

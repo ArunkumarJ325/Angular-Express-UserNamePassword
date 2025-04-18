@@ -1,0 +1,48 @@
+/* Styling for Add User page */
+.add-user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+  }
+  
+  .add-user-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .add-user-container input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-user-container button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .add-user-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-user-container button:focus {
+    outline: none;
+  }
+  
